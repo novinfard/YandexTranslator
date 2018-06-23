@@ -18,6 +18,7 @@
 		CDBA539E20DD65650043AC0A /* BackendService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBA539B20DD65650043AC0A /* BackendService.swift */; };
 		CDBA539F20DD65650043AC0A /* ContentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBA539C20DD65650043AC0A /* ContentService.swift */; };
 		CDBA53A020DD65650043AC0A /* ParserScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBA539D20DD65650043AC0A /* ParserScheme.swift */; };
+		CDBA53A220DE48B90043AC0A /* TranslationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBA53A120DE48B90043AC0A /* TranslationTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		CDBA539B20DD65650043AC0A /* BackendService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendService.swift; sourceTree = "<group>"; };
 		CDBA539C20DD65650043AC0A /* ContentService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentService.swift; sourceTree = "<group>"; };
 		CDBA539D20DD65650043AC0A /* ParserScheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParserScheme.swift; sourceTree = "<group>"; };
+		CDBA53A120DE48B90043AC0A /* TranslationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 				CDBA539B20DD65650043AC0A /* BackendService.swift */,
 				CDBA539C20DD65650043AC0A /* ContentService.swift */,
 				CDBA539D20DD65650043AC0A /* ParserScheme.swift */,
+				CDBA53A120DE48B90043AC0A /* TranslationTableViewCell.swift */,
 				CDBA537120DD62BA0043AC0A /* Main.storyboard */,
 				CDBA537420DD62BB0043AC0A /* Assets.xcassets */,
 				CDBA537620DD62BB0043AC0A /* LaunchScreen.storyboard */,
@@ -349,6 +352,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDBA537020DD62BA0043AC0A /* ViewController.swift in Sources */,
+				CDBA53A220DE48B90043AC0A /* TranslationTableViewCell.swift in Sources */,
 				CDBA539E20DD65650043AC0A /* BackendService.swift in Sources */,
 				CDBA53A020DD65650043AC0A /* ParserScheme.swift in Sources */,
 				CDBA536E20DD62BA0043AC0A /* AppDelegate.swift in Sources */,
@@ -529,7 +533,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VQ3DDEUQ7K;
 				INFOPLIST_FILE = YandexTranslator/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.novinfard.YandexTranslator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -545,7 +552,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VQ3DDEUQ7K;
 				INFOPLIST_FILE = YandexTranslator/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.novinfard.YandexTranslator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -561,7 +571,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VQ3DDEUQ7K;
 				INFOPLIST_FILE = YandexTranslatorTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.novinfard.YandexTranslatorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -578,7 +592,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VQ3DDEUQ7K;
 				INFOPLIST_FILE = YandexTranslatorTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.novinfard.YandexTranslatorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -594,7 +612,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VQ3DDEUQ7K;
 				INFOPLIST_FILE = YandexTranslatorUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.novinfard.YandexTranslatorUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -610,7 +632,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VQ3DDEUQ7K;
 				INFOPLIST_FILE = YandexTranslatorUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.novinfard.YandexTranslatorUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
