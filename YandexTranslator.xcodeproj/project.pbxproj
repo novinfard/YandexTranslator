@@ -1,0 +1,664 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C6CDF03BA27FB146E477C195 /* Pods_YandexTranslator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30628C496C0352027C0DBA6A /* Pods_YandexTranslator.framework */; };
+		CDBA536E20DD62BA0043AC0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBA536D20DD62BA0043AC0A /* AppDelegate.swift */; };
+		CDBA537020DD62BA0043AC0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBA536F20DD62BA0043AC0A /* ViewController.swift */; };
+		CDBA537320DD62BA0043AC0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDBA537120DD62BA0043AC0A /* Main.storyboard */; };
+		CDBA537520DD62BB0043AC0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDBA537420DD62BB0043AC0A /* Assets.xcassets */; };
+		CDBA537820DD62BB0043AC0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDBA537620DD62BB0043AC0A /* LaunchScreen.storyboard */; };
+		CDBA538320DD62BB0043AC0A /* YandexTranslatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBA538220DD62BB0043AC0A /* YandexTranslatorTests.swift */; };
+		CDBA538E20DD62BB0043AC0A /* YandexTranslatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBA538D20DD62BB0043AC0A /* YandexTranslatorUITests.swift */; };
+		CDBA539E20DD65650043AC0A /* BackendService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBA539B20DD65650043AC0A /* BackendService.swift */; };
+		CDBA539F20DD65650043AC0A /* ContentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBA539C20DD65650043AC0A /* ContentService.swift */; };
+		CDBA53A020DD65650043AC0A /* ParserScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBA539D20DD65650043AC0A /* ParserScheme.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CDBA537F20DD62BB0043AC0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDBA536220DD62BA0043AC0A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDBA536920DD62BA0043AC0A;
+			remoteInfo = YandexTranslator;
+		};
+		CDBA538A20DD62BB0043AC0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDBA536220DD62BA0043AC0A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDBA536920DD62BA0043AC0A;
+			remoteInfo = YandexTranslator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		30628C496C0352027C0DBA6A /* Pods_YandexTranslator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YandexTranslator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F0E846D252CB689CFAD09EC /* Pods-YandexTranslator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YandexTranslator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YandexTranslator/Pods-YandexTranslator.debug.xcconfig"; sourceTree = "<group>"; };
+		C085DD319B3DFECCB7642BA4 /* Pods-YandexTranslator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YandexTranslator.release.xcconfig"; path = "Pods/Target Support Files/Pods-YandexTranslator/Pods-YandexTranslator.release.xcconfig"; sourceTree = "<group>"; };
+		CDBA536A20DD62BA0043AC0A /* YandexTranslator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YandexTranslator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDBA536D20DD62BA0043AC0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CDBA536F20DD62BA0043AC0A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CDBA537220DD62BA0043AC0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CDBA537420DD62BB0043AC0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CDBA537720DD62BB0043AC0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CDBA537920DD62BB0043AC0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDBA537E20DD62BB0043AC0A /* YandexTranslatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YandexTranslatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDBA538220DD62BB0043AC0A /* YandexTranslatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YandexTranslatorTests.swift; sourceTree = "<group>"; };
+		CDBA538420DD62BB0043AC0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDBA538920DD62BB0043AC0A /* YandexTranslatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YandexTranslatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDBA538D20DD62BB0043AC0A /* YandexTranslatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YandexTranslatorUITests.swift; sourceTree = "<group>"; };
+		CDBA538F20DD62BB0043AC0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDBA539B20DD65650043AC0A /* BackendService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendService.swift; sourceTree = "<group>"; };
+		CDBA539C20DD65650043AC0A /* ContentService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentService.swift; sourceTree = "<group>"; };
+		CDBA539D20DD65650043AC0A /* ParserScheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParserScheme.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CDBA536720DD62BA0043AC0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6CDF03BA27FB146E477C195 /* Pods_YandexTranslator.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDBA537B20DD62BB0043AC0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDBA538620DD62BB0043AC0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A7FA1182BADF3EFA0BD49B98 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30628C496C0352027C0DBA6A /* Pods_YandexTranslator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CDBA536120DD62BA0043AC0A = {
+			isa = PBXGroup;
+			children = (
+				CDBA536C20DD62BA0043AC0A /* YandexTranslator */,
+				CDBA538120DD62BB0043AC0A /* YandexTranslatorTests */,
+				CDBA538C20DD62BB0043AC0A /* YandexTranslatorUITests */,
+				CDBA536B20DD62BA0043AC0A /* Products */,
+				EEED3C64EF978FAF4A5A977D /* Pods */,
+				A7FA1182BADF3EFA0BD49B98 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CDBA536B20DD62BA0043AC0A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDBA536A20DD62BA0043AC0A /* YandexTranslator.app */,
+				CDBA537E20DD62BB0043AC0A /* YandexTranslatorTests.xctest */,
+				CDBA538920DD62BB0043AC0A /* YandexTranslatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CDBA536C20DD62BA0043AC0A /* YandexTranslator */ = {
+			isa = PBXGroup;
+			children = (
+				CDBA536D20DD62BA0043AC0A /* AppDelegate.swift */,
+				CDBA536F20DD62BA0043AC0A /* ViewController.swift */,
+				CDBA539B20DD65650043AC0A /* BackendService.swift */,
+				CDBA539C20DD65650043AC0A /* ContentService.swift */,
+				CDBA539D20DD65650043AC0A /* ParserScheme.swift */,
+				CDBA537120DD62BA0043AC0A /* Main.storyboard */,
+				CDBA537420DD62BB0043AC0A /* Assets.xcassets */,
+				CDBA537620DD62BB0043AC0A /* LaunchScreen.storyboard */,
+				CDBA537920DD62BB0043AC0A /* Info.plist */,
+			);
+			path = YandexTranslator;
+			sourceTree = "<group>";
+		};
+		CDBA538120DD62BB0043AC0A /* YandexTranslatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				CDBA538220DD62BB0043AC0A /* YandexTranslatorTests.swift */,
+				CDBA538420DD62BB0043AC0A /* Info.plist */,
+			);
+			path = YandexTranslatorTests;
+			sourceTree = "<group>";
+		};
+		CDBA538C20DD62BB0043AC0A /* YandexTranslatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CDBA538D20DD62BB0043AC0A /* YandexTranslatorUITests.swift */,
+				CDBA538F20DD62BB0043AC0A /* Info.plist */,
+			);
+			path = YandexTranslatorUITests;
+			sourceTree = "<group>";
+		};
+		EEED3C64EF978FAF4A5A977D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F0E846D252CB689CFAD09EC /* Pods-YandexTranslator.debug.xcconfig */,
+				C085DD319B3DFECCB7642BA4 /* Pods-YandexTranslator.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CDBA536920DD62BA0043AC0A /* YandexTranslator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDBA539220DD62BB0043AC0A /* Build configuration list for PBXNativeTarget "YandexTranslator" */;
+			buildPhases = (
+				14CCE3E756118177C361B808 /* [CP] Check Pods Manifest.lock */,
+				CDBA536620DD62BA0043AC0A /* Sources */,
+				CDBA536720DD62BA0043AC0A /* Frameworks */,
+				CDBA536820DD62BA0043AC0A /* Resources */,
+				0F893DEA14AF85A6C37C0B45 /* [CP] Embed Pods Frameworks */,
+				ED3D2D4450DBB6313D035C52 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YandexTranslator;
+			productName = YandexTranslator;
+			productReference = CDBA536A20DD62BA0043AC0A /* YandexTranslator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CDBA537D20DD62BB0043AC0A /* YandexTranslatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDBA539520DD62BB0043AC0A /* Build configuration list for PBXNativeTarget "YandexTranslatorTests" */;
+			buildPhases = (
+				CDBA537A20DD62BB0043AC0A /* Sources */,
+				CDBA537B20DD62BB0043AC0A /* Frameworks */,
+				CDBA537C20DD62BB0043AC0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDBA538020DD62BB0043AC0A /* PBXTargetDependency */,
+			);
+			name = YandexTranslatorTests;
+			productName = YandexTranslatorTests;
+			productReference = CDBA537E20DD62BB0043AC0A /* YandexTranslatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CDBA538820DD62BB0043AC0A /* YandexTranslatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDBA539820DD62BB0043AC0A /* Build configuration list for PBXNativeTarget "YandexTranslatorUITests" */;
+			buildPhases = (
+				CDBA538520DD62BB0043AC0A /* Sources */,
+				CDBA538620DD62BB0043AC0A /* Frameworks */,
+				CDBA538720DD62BB0043AC0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDBA538B20DD62BB0043AC0A /* PBXTargetDependency */,
+			);
+			name = YandexTranslatorUITests;
+			productName = YandexTranslatorUITests;
+			productReference = CDBA538920DD62BB0043AC0A /* YandexTranslatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CDBA536220DD62BA0043AC0A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Soheil Novinfard";
+				TargetAttributes = {
+					CDBA536920DD62BA0043AC0A = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					CDBA537D20DD62BB0043AC0A = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = CDBA536920DD62BA0043AC0A;
+					};
+					CDBA538820DD62BB0043AC0A = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = CDBA536920DD62BA0043AC0A;
+					};
+				};
+			};
+			buildConfigurationList = CDBA536520DD62BA0043AC0A /* Build configuration list for PBXProject "YandexTranslator" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CDBA536120DD62BA0043AC0A;
+			productRefGroup = CDBA536B20DD62BA0043AC0A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CDBA536920DD62BA0043AC0A /* YandexTranslator */,
+				CDBA537D20DD62BB0043AC0A /* YandexTranslatorTests */,
+				CDBA538820DD62BB0043AC0A /* YandexTranslatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CDBA536820DD62BA0043AC0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDBA537820DD62BB0043AC0A /* LaunchScreen.storyboard in Resources */,
+				CDBA537520DD62BB0043AC0A /* Assets.xcassets in Resources */,
+				CDBA537320DD62BA0043AC0A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDBA537C20DD62BB0043AC0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDBA538720DD62BB0043AC0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F893DEA14AF85A6C37C0B45 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-YandexTranslator/Pods-YandexTranslator-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YandexTranslator/Pods-YandexTranslator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		14CCE3E756118177C361B808 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YandexTranslator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED3D2D4450DBB6313D035C52 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YandexTranslator/Pods-YandexTranslator-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CDBA536620DD62BA0043AC0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDBA537020DD62BA0043AC0A /* ViewController.swift in Sources */,
+				CDBA539E20DD65650043AC0A /* BackendService.swift in Sources */,
+				CDBA53A020DD65650043AC0A /* ParserScheme.swift in Sources */,
+				CDBA536E20DD62BA0043AC0A /* AppDelegate.swift in Sources */,
+				CDBA539F20DD65650043AC0A /* ContentService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDBA537A20DD62BB0043AC0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDBA538320DD62BB0043AC0A /* YandexTranslatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDBA538520DD62BB0043AC0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDBA538E20DD62BB0043AC0A /* YandexTranslatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CDBA538020DD62BB0043AC0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDBA536920DD62BA0043AC0A /* YandexTranslator */;
+			targetProxy = CDBA537F20DD62BB0043AC0A /* PBXContainerItemProxy */;
+		};
+		CDBA538B20DD62BB0043AC0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDBA536920DD62BA0043AC0A /* YandexTranslator */;
+			targetProxy = CDBA538A20DD62BB0043AC0A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CDBA537120DD62BA0043AC0A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDBA537220DD62BA0043AC0A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CDBA537620DD62BB0043AC0A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDBA537720DD62BB0043AC0A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CDBA539020DD62BB0043AC0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CDBA539120DD62BB0043AC0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CDBA539320DD62BB0043AC0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F0E846D252CB689CFAD09EC /* Pods-YandexTranslator.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VQ3DDEUQ7K;
+				INFOPLIST_FILE = YandexTranslator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.novinfard.YandexTranslator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CDBA539420DD62BB0043AC0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C085DD319B3DFECCB7642BA4 /* Pods-YandexTranslator.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VQ3DDEUQ7K;
+				INFOPLIST_FILE = YandexTranslator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.novinfard.YandexTranslator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CDBA539620DD62BB0043AC0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VQ3DDEUQ7K;
+				INFOPLIST_FILE = YandexTranslatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.novinfard.YandexTranslatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YandexTranslator.app/YandexTranslator";
+			};
+			name = Debug;
+		};
+		CDBA539720DD62BB0043AC0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VQ3DDEUQ7K;
+				INFOPLIST_FILE = YandexTranslatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.novinfard.YandexTranslatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YandexTranslator.app/YandexTranslator";
+			};
+			name = Release;
+		};
+		CDBA539920DD62BB0043AC0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VQ3DDEUQ7K;
+				INFOPLIST_FILE = YandexTranslatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.novinfard.YandexTranslatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YandexTranslator;
+			};
+			name = Debug;
+		};
+		CDBA539A20DD62BB0043AC0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VQ3DDEUQ7K;
+				INFOPLIST_FILE = YandexTranslatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.novinfard.YandexTranslatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YandexTranslator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CDBA536520DD62BA0043AC0A /* Build configuration list for PBXProject "YandexTranslator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDBA539020DD62BB0043AC0A /* Debug */,
+				CDBA539120DD62BB0043AC0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDBA539220DD62BB0043AC0A /* Build configuration list for PBXNativeTarget "YandexTranslator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDBA539320DD62BB0043AC0A /* Debug */,
+				CDBA539420DD62BB0043AC0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDBA539520DD62BB0043AC0A /* Build configuration list for PBXNativeTarget "YandexTranslatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDBA539620DD62BB0043AC0A /* Debug */,
+				CDBA539720DD62BB0043AC0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDBA539820DD62BB0043AC0A /* Build configuration list for PBXNativeTarget "YandexTranslatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDBA539920DD62BB0043AC0A /* Debug */,
+				CDBA539A20DD62BB0043AC0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CDBA536220DD62BA0043AC0A /* Project object */;
+}
