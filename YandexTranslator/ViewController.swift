@@ -9,7 +9,7 @@
 import UIKit
 import MBProgressHUD
 
-class ViewController: UIViewController, UIPickerViewDelegate, UITextFieldDelegate {
+class ViewController: UIViewController, UIPickerViewDelegate, UITextFieldDelegate, HistoryViewControllerDelegate {
 	
 	var languages: Languages?
 	var translations: [Translation]?
@@ -119,7 +119,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UITextFieldDelegat
 		languagePickerEndEditing()
 		translationText.endEditing(true)
 		
-		guard translationText.text.count > 3 else {
+		guard translationText.text.count >= 3 else {
 			let alert = UIAlertController(title: "Too short", message: "Please enter longer text to translate which at least contains 3 characters", preferredStyle:.alert)
 			
 			alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default) { (action:UIAlertAction!) in
@@ -139,6 +139,29 @@ class ViewController: UIViewController, UIPickerViewDelegate, UITextFieldDelegat
 				self.getTranslation(text: text, dir: dirs)
 			}
 		}
+	}
+	
+	@IBAction func historyPressed(_ sender: Any) {
+		guard !history.isEmpty else {
+			let alert = UIAlertController(title: "No History", message: "No history available yet", preferredStyle:.alert)
+			
+			alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default) { (action:UIAlertAction!) in
+				self.navigationController?.popViewController(animated: true)
+			})
+			present(alert, animated: true, completion: nil)
+			return
+		}
+		
+		let storyboard = UIStoryboard(name: "Main", bundle: nil)
+		let vc = storyboard.instantiateViewController(withIdentifier: "history") as! HistoryViewController
+		
+		vc.history = history
+		vc.delegate = self
+		
+		//All objects and view are transparent
+		vc.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+		
+		present(vc, animated: true)
 	}
 	
 	@IBAction func backgroundPressed(_ sender: Any) {
@@ -179,6 +202,17 @@ class ViewController: UIViewController, UIPickerViewDelegate, UITextFieldDelegat
 		}
 		languageField.endEditing(true)
 	}
+	
+	// Delegate
+	func dataChanged(historyItem: HistoryItem) {
+		translationText.text = historyItem.text
+		translations = historyItem.translations
+		
+		DispatchQueue.main.async {
+			self.tableview.reloadData()
+		}
+	}
+
 }
 
 extension ViewController: UIPickerViewDataSource {
