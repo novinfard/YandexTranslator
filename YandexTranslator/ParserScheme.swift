@@ -17,7 +17,7 @@ struct Languages: Codable {
 		langs = try values.decode([String: String].self, forKey: .langs)
 		
 		let tempDirs = try values.decode([String].self, forKey: .dirs)
-		dirs = tempDirs.filter {$0.contains("en-")}
+		dirs = tempDirs.filter {$0.hasPrefix("en-")}
 	}
 }
 
