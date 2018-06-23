@@ -42,7 +42,7 @@ class HistoryViewController: UITableViewController {
 	}
 	
 	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-		print(history[indexPath.row])
+//		print(history[indexPath.row])
 		delegate?.dataChanged(historyItem: history[indexPath.row])
 		dismiss(animated: true, completion: nil)
 	}

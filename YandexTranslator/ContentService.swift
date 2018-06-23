@@ -58,12 +58,26 @@ class ContentService: NSObject {
 		myGroup.notify(queue: .main) {
 			success(result)
 		}
+		
+		myGroup.notifyWait(target: .main, timeout: DispatchTime.now() + 10) {
+			success(result)
+		}
 	}
 	
 	func getHistoryItem(text: String, translations: [Translation]) -> HistoryItem {
 		let item = HistoryItem(text: text, translations: translations)
 		return item
 	}
-	
+}
 
+extension DispatchGroup {
+	func notifyWait(target: DispatchQueue, timeout: DispatchTime, handler: @escaping (() -> Void)) {
+		DispatchQueue.global(qos: .default).async {
+			_ = self.wait(timeout: timeout)
+			target.async {
+				handler()
+			}
+		}
+	}
+	
 }
