@@ -27,4 +27,9 @@ struct Translation: Codable {
 	let text: [String]
 }
 
+struct HistoryItem {
+	var text: String
+	var translations: [Translation]
+}
+
 

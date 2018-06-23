@@ -41,7 +41,7 @@ class ContentService: NSObject {
 				if let jsonData = jsonData {
 					if let translation = try? JSONDecoder().decode(Translation.self, from: jsonData) {
 						result.append(translation)
-						print(translation)
+						//print(translation)
 						myGroup.leave()
 					}
 				}
@@ -59,5 +59,11 @@ class ContentService: NSObject {
 			success(result)
 		}
 	}
+	
+	func getHistoryItem(text: String, translations: [Translation]) -> HistoryItem {
+		let item = HistoryItem(text: text, translations: translations)
+		return item
+	}
+	
 
 }

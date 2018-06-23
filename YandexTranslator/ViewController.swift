@@ -14,6 +14,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UITextFieldDelegat
 	var languages: Languages?
 	var translations: [Translation]?
 	var selectedDir: String?
+	var history = [HistoryItem]()
 	
 	var languagePicker: UIPickerView!
 	
@@ -25,7 +26,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UITextFieldDelegat
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
-		configLoader()
+		startLoader()
 		configTranslationText()
 		configTableview()
 		getLanguageList()
@@ -33,24 +34,30 @@ class ViewController: UIViewController, UIPickerViewDelegate, UITextFieldDelegat
 	
 	func getLanguageList() {
 		ContentService.shared.getLanguageList(success: { item in
-			DispatchQueue.main.async {
-				MBProgressHUD.hide(for: self.view, animated: true)
-			}
 			self.languages = item
-			self.configTranslatePicker()
-
+			
+			DispatchQueue.main.async {
+				self.configTranslatePicker()
+				self.endLoader()
+			}
 		}) { _ in
 			print("Error getting languages")
 		}
 	}
 	
 	func getTranslation(text: String, dir: [String]) {
+		startLoader()
 		ContentService.shared.getTranslation(text, languages: dir, success: { items in
 			self.translations = items
-			print(items!)
+			
+			if let items = items {
+				self.history.append(ContentService.shared.getHistoryItem(text: text, translations: items))
+				print(self.history)
+			}
 			
 			DispatchQueue.main.async {
 				self.tableview.reloadData()
+				self.endLoader()
 			}
 			
 		}) { _ in
@@ -58,10 +65,14 @@ class ViewController: UIViewController, UIPickerViewDelegate, UITextFieldDelegat
 		}
 	}
 
-	func configLoader() {
+	func startLoader() {
 		let loadingNotification = MBProgressHUD.showAdded(to: view, animated: true)
 		loadingNotification.mode = MBProgressHUDMode.indeterminate
 		loadingNotification.label.text = "Loading"
+	}
+	
+	func endLoader() {
+		MBProgressHUD.hide(for: self.view, animated: true)
 	}
 	
 	func configTranslationText() {
